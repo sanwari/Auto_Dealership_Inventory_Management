@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="672.0" style="-fx-background-color: #58B8D9;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdminDeleteUserController">
+   <children>
+      <Label layoutX="57.0" layoutY="16.0" text="Delete User:" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold" size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="userCBOX" layoutX="79.0" layoutY="81.0" prefHeight="27.0" prefWidth="348.0" />
+      <JFXButton fx:id="selectBTN" buttonType="RAISED" layoutX="506.0" layoutY="81.0" onAction="#doSelect" prefHeight="27.0" prefWidth="102.0" ripplerFill="#fff0af" style="-fx-background-color: #E1CB5F;" text="Select User">
+         <font>
+            <Font name="Lucida Sans Demibold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="outputTA" layoutX="75.0" layoutY="180.0" prefHeight="169.0" prefWidth="533.0" promptText="Output">
+         <font>
+            <Font name="Lucida Sans Demibold" size="13.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</Pane>

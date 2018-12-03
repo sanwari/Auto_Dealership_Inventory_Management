@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="672.0" style="-fx-background-color: #63BDDA;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AssociateAddController">
+   <children>
+      <Label layoutX="21.0" layoutY="14.0" text="Add Car">
+         <font>
+            <Font name="Lucida Sans Demibold" size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="336.0" prefHeight="415.0" prefWidth="339.0" style="-fx-background-color: #2982A9;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" text="Output" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Demibold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="outputTA" editable="false" layoutX="43.0" layoutY="48.0" prefHeight="328.0" prefWidth="264.0" promptText="Output" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+               <font>
+                  <Font name="Lucida Sans Demibold" size="13.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="makeTF" layoutX="39.0" layoutY="49.0" prefHeight="27.0" prefWidth="249.0" promptText="Make" style="-fx-text-fill: black; -fx-prompt-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font name="Lucida Sans Demibold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="modelTF" layoutX="39.0" layoutY="97.0" prefHeight="27.0" prefWidth="249.0" promptText="Model" style="-fx-prompt-text-fill: black; -fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font name="Lucida Sans Demibold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="yearTF" layoutX="39.0" layoutY="145.0" prefHeight="27.0" prefWidth="249.0" promptText="Year" style="-fx-prompt-text-fill: black; -fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font name="Lucida Sans Demibold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="colorTF" layoutX="39.0" layoutY="188.0" prefHeight="27.0" prefWidth="249.0" promptText="Color" style="-fx-prompt-text-fill: black; -fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font name="Lucida Sans Demibold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="mileTF" layoutX="39.0" layoutY="238.0" prefHeight="27.0" prefWidth="249.0" promptText="Mileage" style="-fx-prompt-text-fill: black; -fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font name="Lucida Sans Demibold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="vinTF" layoutX="39.0" layoutY="286.0" prefHeight="27.0" prefWidth="249.0" promptText="Vin #" style="-fx-prompt-text-fill: black; -fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font name="Lucida Sans Demibold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="purchasePriceTF" layoutX="39.0" layoutY="330.0" prefHeight="27.0" prefWidth="249.0" promptText="Purchase Price" style="-fx-prompt-text-fill: black; -fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font name="Lucida Sans Demibold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="addBTN" buttonType="RAISED" layoutX="190.0" layoutY="374.0" onAction="#doAdd" prefHeight="27.0" prefWidth="98.0" ripplerFill="#a4e1ab" style="-fx-background-color: #66A86E;" text="Add Car">
+         <font>
+            <Font name="Lucida Sans Demibold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

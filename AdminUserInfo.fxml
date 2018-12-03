@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="672.0" style="-fx-background-color: #EBF5F7;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdminUserInfoController">
+   <children>
+      <Label layoutX="44.0" layoutY="34.0" text="All Users:">
+         <font>
+            <Font name="Lucida Sans Demibold" size="20.0" />
+         </font>
+      </Label>
+      <JFXListView fx:id="allUsersLST" layoutX="44.0" layoutY="74.0" prefHeight="217.0" prefWidth="247.0" />
+      <JFXButton fx:id="selectUserBTN" buttonType="RAISED" layoutX="192.0" layoutY="328.0" onAction="#doSelectUser" prefHeight="27.0" prefWidth="99.0" ripplerFill="#ffb36b" style="-fx-background-color: #F9733C;" text="Select User" />
+      <Pane layoutX="336.0" prefHeight="415.0" prefWidth="336.0" style="-fx-background-color: #56B2DA;">
+         <children>
+            <Label layoutX="37.0" layoutY="35.0" text="Detailed Information:" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Demibold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="outputTA1" layoutX="66.0" layoutY="75.0" prefHeight="217.0" prefWidth="247.0" promptText="Output">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="13.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </Pane>
+   </children>
+</Pane>
